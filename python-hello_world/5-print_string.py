@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-text = "Holberton School"
-print(f"{text}{text}{text}\n{text[:10]}")
+str = "Holberton School"
+print(f"{str}{str}{str}\n{str[:10]}")
