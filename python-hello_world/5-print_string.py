@@ -1,5 +1,3 @@
 #!/usr/bin/python3
-str = "Holberton School"
-print(
-    f"{str[:10]} {str[10:]}{str[:10]} {str[10:]}"
-    f"{str[:10]} {str[10:]}\n{str[:10]}")
+text = "Holberton School"
+print(f"{text}{text}{text}\n{text[:10]}")
