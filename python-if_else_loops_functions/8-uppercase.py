@@ -2,7 +2,9 @@
 def uppercase(str):
     for i in range(len(str)):
         newascii = ord(str[i])
-        if not (newascii >= 97 and newascii <= 122):
+        if str == "":
+            uppercaseLetter = None
+        elif not (newascii >= 97 and newascii <= 122):
             uppercaseLetter = str[i]
         else:
             uppercaseLetter = chr(newascii - 32)
