@@ -8,4 +8,3 @@ def uppercase(str):
 
         print("{}".format(chr(ascii_code)), end="")
     print()
-uppercase("Patrick Macabulos 53553435=== ")
