@@ -1,14 +1,11 @@
 #!/usr/bin/python3
 def uppercase(str):
-    for i in range(len(str)):
-        newascii = ord(str[i])
-        if str == "":
-            uppercaseLetter = None
-        elif not (newascii >= 97 and newascii <= 122):
-            uppercaseLetter = str[i]
-        else:
-            uppercaseLetter = chr(newascii - 32)
-        if i == len(str) - 1:
-            print("{}".format(uppercaseLetter))
-            break
-        print("{}".format(uppercaseLetter), end="")
+    for c in str:
+        ascii_code = ord(c)
+
+        if 97 <= ascii_code <= 122:
+            ascii_code -= 32
+
+        print("{}".format(chr(ascii_code)), end="")
+    print()
+uppercase("Patrick Macabulos 53553435=== ")
