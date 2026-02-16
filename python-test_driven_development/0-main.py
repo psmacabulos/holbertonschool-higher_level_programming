@@ -1,10 +1,15 @@
 #!/usr/bin/python3
+add_integer = __import__('0-add_integer').add_integer
 
-# Manual testing file for 0-add_integer.py
-
-# Import your function here manually when implemented
-# Example:
-# from 0-add_integer import function_name
-
-if __name__ == "__main__":
-    pass
+print(add_integer(1, 2))
+print(add_integer(100, -2))
+print(add_integer(2))
+print(add_integer(100.3, -2))
+try:
+    print(add_integer(4, "School"))
+except Exception as e:
+    print(e)
+try:
+    print(add_integer(None))
+except Exception as e:
+    print(e)

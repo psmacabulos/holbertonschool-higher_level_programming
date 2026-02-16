@@ -1,0 +1,6 @@
+>>> func = __import__('100-matrix_mul')
+
+# Example:
+# >>> func.some_function()
+# Expected output here
+

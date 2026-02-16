@@ -1,0 +1,6 @@
+>>> func = __import__('4-print_square')
+
+# Example:
+# >>> func.some_function()
+# Expected output here
+

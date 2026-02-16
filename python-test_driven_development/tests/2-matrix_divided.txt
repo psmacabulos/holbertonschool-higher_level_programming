@@ -1,0 +1,6 @@
+>>> func = __import__('2-matrix_divided')
+
+# Example:
+# >>> func.some_function()
+# Expected output here
+

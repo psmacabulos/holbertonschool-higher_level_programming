@@ -1,0 +1,6 @@
+>>> func = __import__('101-lazy_matrix_mul')
+
+# Example:
+# >>> func.some_function()
+# Expected output here
+
