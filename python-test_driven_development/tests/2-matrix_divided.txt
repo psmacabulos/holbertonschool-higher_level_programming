@@ -20,6 +20,13 @@
 [[0.75, 1.25], [1.75, 2.25]]
 
 # ----------------------
+# div is infinity
+# ----------------------
+
+>>> matrix_divided([[1, 2], [3, 4]], float("inf"))
+[[0.0, 0.0], [0.0, 0.0]]
+
+# ----------------------
 # Invalid matrix structure
 # ----------------------
 
@@ -60,3 +67,17 @@ TypeError: div must be a number
 Traceback (most recent call last):
 ...
 ZeroDivisionError: division by zero
+
+# ----------------------
+# Missing arguments
+# ----------------------
+
+>>> matrix_divided([[1, 2]])
+Traceback (most recent call last):
+...
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+>>> matrix_divided()
+Traceback (most recent call last):
+...
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
