@@ -6,5 +6,6 @@ matrix = [
     [4, 5, 6]
 ]
 print(matrix_divided(matrix, 3))
+print(matrix_divided())
+print(matrix_divided(matrix))
 print(matrix)
-

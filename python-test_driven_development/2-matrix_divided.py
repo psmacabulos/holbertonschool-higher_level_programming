@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """
-This module contains a function that divides all elements
+This module provides a function that divides all elements
 of a matrix by a given divisor.
 
-The function validates input structure and returns
-a new matrix with rounded results.
+The function validates the structure of the matrix and
+returns a new matrix with results rounded to 2 decimals.
 """
 
 
@@ -16,8 +16,10 @@ def matrix_divided(matrix, div):
     """
 
     # Validate matrix structure
-    if (not isinstance(matrix, list) or matrix == [] or
-            not all(isinstance(row, list) for row in matrix)):
+    if (not isinstance(matrix, list) or
+            matrix == [] or
+            not all(isinstance(row, list) for row in matrix) or
+            not all(row != [] for row in matrix)):
         raise TypeError(
             "matrix must be a matrix (list of lists) "
             "of integers/floats"
@@ -60,4 +62,3 @@ def matrix_divided(matrix, div):
         new_matrix.append(new_row)
 
     return new_matrix
-
