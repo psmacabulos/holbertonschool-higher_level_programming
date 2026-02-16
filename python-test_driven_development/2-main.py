@@ -1,10 +1,10 @@
 #!/usr/bin/python3
+matrix_divided = __import__('2-matrix_divided').matrix_divided
 
-# Manual testing file for 2-matrix_divided.py
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6]
+]
+print(matrix_divided(matrix, 3))
+print(matrix)
 
-# Import your function here manually when implemented
-# Example:
-# from 2-matrix_divided import function_name
-
-if __name__ == "__main__":
-    pass
