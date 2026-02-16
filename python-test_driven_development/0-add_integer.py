@@ -5,6 +5,7 @@ This module contains a function that adds two integers.
 The function ensures that inputs are integers or floats.
 """
 
+
 def add_integer(a, b=98):
     """
     Adds two integers.
