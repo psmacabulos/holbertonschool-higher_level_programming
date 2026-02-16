@@ -1,10 +1,10 @@
 #!/usr/bin/python3
+say_my_name = __import__('3-say_my_name').say_my_name
 
-# Manual testing file for 3-say_my_name.py
-
-# Import your function here manually when implemented
-# Example:
-# from 3-say_my_name import function_name
-
-if __name__ == "__main__":
-    pass
+say_my_name("John", "Smith")
+say_my_name("Walter", "White")
+say_my_name("Bob")
+try:
+    say_my_name(12, "White")
+except Exception as e:
+    print(e)
