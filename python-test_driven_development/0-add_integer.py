@@ -1,15 +1,13 @@
 #!/usr/bin/python3
 """
 This module contains a function that adds two integers.
-"""
 
+The function ensures that inputs are integers or floats.
+"""
 
 def add_integer(a, b=98):
     """
     Adds two integers.
-
-    a and b must be integers or floats.
-    Floats are casted to integers before addition.
     """
 
     if not isinstance(a, (int, float)):
@@ -18,14 +16,12 @@ def add_integer(a, b=98):
     if not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
 
-    # Reject NaN and infinity for a
     if isinstance(a, float):
-        if a != a or a == float("inf") or a == float("-inf"):
+        if a != a or abs(a) == float("inf"):
             raise TypeError("a must be an integer")
 
-    # Reject NaN and infinity for b
     if isinstance(b, float):
-        if b != b or b == float("inf") or b == float("-inf"):
+        if b != b or abs(b) == float("inf"):
             raise TypeError("b must be an integer")
 
     return int(a) + int(b)
