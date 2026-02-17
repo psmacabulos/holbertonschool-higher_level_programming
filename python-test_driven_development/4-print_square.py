@@ -8,7 +8,6 @@ length and prints the character #.
 def print_square(size):
     """
     Prints the square of a given size
-    
     Validates input and raises appropriate
     exceptions when conditions are not met
     """
@@ -23,6 +22,6 @@ def print_square(size):
             for col in range(square):
                 print(f"#", end='')
             print()
-        
+
     except Exception:
         print((Exception))
