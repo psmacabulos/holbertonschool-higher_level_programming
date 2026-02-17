@@ -1,10 +1,5 @@
 #!/usr/bin/python3
+max_integer = __import__('6-max_integer').max_integer
 
-# Manual testing file for 6-max_integer.py
-
-# Import your function here manually when implemented
-# Example:
-# from 6-max_integer import function_name
-
-if __name__ == "__main__":
-    pass
+print(max_integer([1, 2, 3, 4]))
+print(max_integer([1, 3, 4, 2]))
