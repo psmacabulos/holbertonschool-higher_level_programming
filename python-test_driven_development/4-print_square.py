@@ -1,14 +1,28 @@
 #!/usr/bin/python3
 """
-Module documentation for 4-print_square.py
-
-Write documentation first.
-Add doctests before implementation.
+This module provides a function that square a given
+length and prints the character #.
 """
 
-# Your implementation goes below
 
+def print_square(size):
+    """
+    Prints the square of a given size
+    
+    Validates input and raises appropriate
+    exceptions when conditions are not met
+    """
 
-if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+    if not isinstance(size, int):
+        raise TypeError("size must be an integer")
+    if size < 0:
+        raise ValueError("size must be >= 0")
+    try:
+        square = size
+        for row in range(square):
+            for col in range(square):
+                print(f"#", end='')
+            print()
+        
+    except Exception:
+        print((Exception))
