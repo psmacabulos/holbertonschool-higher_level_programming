@@ -1,22 +1,14 @@
 # Python - Classes and Objects
 
-This project covers foundational Object-Oriented Programming concepts in Python.
+This project covers fundamental Object-Oriented Programming concepts in Python.
 
-## Covered Topics
-- What is OOP
-- Classes and objects
-- Private attributes
-- Validation
-- Methods
-- Area computation
+## Files
+0-square.py → 6-square.py
 
-## Usage
+Each file contains:
+- Proper shebang
+- Module docstring
+- Class docstring
+- Method definitions only
 
-Make files executable:
-    chmod +x *.py
-
-Run individual tests:
-    python3 main_0.py
-    python3 main_1.py
-    python3 main_2.py
-    python3 main_3.py
+Implementation intentionally left empty.

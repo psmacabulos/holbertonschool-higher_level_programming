@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-echo "Creating Holberton Python - Classes and Objects starter files..."
+echo "Generating Holberton Python - Classes and Objects SKELETON files..."
 
-# Task 0
-cat << 'EOF' > task_0.py
+############################
+# 0-square.py
+############################
+cat << 'EOF' > 0-square.py
 #!/usr/bin/python3
 """Module that defines an empty Square class."""
 
@@ -12,128 +14,171 @@ class Square:
     pass
 EOF
 
-cat << 'EOF' > main_0.py
+############################
+# 1-square.py
+############################
+cat << 'EOF' > 1-square.py
 #!/usr/bin/python3
-"""Test file for task 0."""
-
-from task_0 import Square
-
-s = Square()
-print(type(s))
-EOF
-
-# Task 1
-cat << 'EOF' > task_1.py
-#!/usr/bin/python3
-"""Module that defines a Square with private size."""
+"""Module that defines a Square with a private size attribute."""
 
 class Square:
-    """Defines a square with private size attribute."""
+    """Defines a square."""
 
     def __init__(self, size):
         """Initialize square with size."""
-        self.__size = size
+        pass
 EOF
 
-cat << 'EOF' > main_1.py
+############################
+# 2-square.py
+############################
+cat << 'EOF' > 2-square.py
 #!/usr/bin/python3
-"""Test file for task 1."""
-
-from task_1 import Square
-
-s = Square(5)
-print(s._Square__size)
-EOF
-
-# Task 2
-cat << 'EOF' > task_2.py
-#!/usr/bin/python3
-"""Module that defines a Square with validated size."""
+"""Module that defines a Square with size validation."""
 
 class Square:
     """Defines a square with validated size."""
 
     def __init__(self, size=0):
         """Initialize square with size validation."""
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        if size < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = size
+        pass
 EOF
 
-cat << 'EOF' > main_2.py
-#!/usr/bin/python3
-"""Test file for task 2."""
-
-from task_2 import Square
-
-try:
-    Square(-1)
-except Exception as e:
-    print(e)
-
-s = Square(3)
-print(s._Square__size)
-EOF
-
-# Task 3
-cat << 'EOF' > task_3.py
+############################
+# 3-square.py
+############################
+cat << 'EOF' > 3-square.py
 #!/usr/bin/python3
 """Module that defines a Square with area method."""
 
 class Square:
-    """Defines a square with area calculation."""
+    """Defines a square with area capability."""
 
     def __init__(self, size=0):
-        """Initialize square with size validation."""
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        if size < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = size
+        """Initialize square."""
+        pass
 
     def area(self):
         """Return the area of the square."""
-        return self.__size ** 2
+        pass
 EOF
 
-cat << 'EOF' > main_3.py
+############################
+# 4-square.py
+############################
+cat << 'EOF' > 4-square.py
 #!/usr/bin/python3
-"""Test file for task 3."""
+"""Module that defines a Square with size property."""
 
-from task_3 import Square
+class Square:
+    """Defines a square with size getter."""
 
-s = Square(4)
-print("Area:", s.area())
+    def __init__(self, size=0):
+        """Initialize square."""
+        pass
+
+    @property
+    def size(self):
+        """Retrieve the size of the square."""
+        pass
+
+    def area(self):
+        """Return the area of the square."""
+        pass
 EOF
 
-# README
+############################
+# 5-square.py
+############################
+cat << 'EOF' > 5-square.py
+#!/usr/bin/python3
+"""Module that defines a Square with getter and setter."""
+
+class Square:
+    """Defines a square with validated size property."""
+
+    def __init__(self, size=0):
+        """Initialize square."""
+        pass
+
+    @property
+    def size(self):
+        """Retrieve size."""
+        pass
+
+    @size.setter
+    def size(self, value):
+        """Set size with validation."""
+        pass
+
+    def area(self):
+        """Return area."""
+        pass
+EOF
+
+############################
+# 6-square.py
+############################
+cat << 'EOF' > 6-square.py
+#!/usr/bin/python3
+"""Module that defines a Square with size and position."""
+
+class Square:
+    """Defines a square with size and position."""
+
+    def __init__(self, size=0, position=(0, 0)):
+        """Initialize square."""
+        pass
+
+    @property
+    def size(self):
+        """Retrieve size."""
+        pass
+
+    @size.setter
+    def size(self, value):
+        """Set size with validation."""
+        pass
+
+    @property
+    def position(self):
+        """Retrieve position."""
+        pass
+
+    @position.setter
+    def position(self, value):
+        """Set position with validation."""
+        pass
+
+    def area(self):
+        """Return area."""
+        pass
+
+    def my_print(self):
+        """Print square considering position."""
+        pass
+EOF
+
+############################
+# README.md
+############################
 cat << 'EOF' > README.md
 # Python - Classes and Objects
 
-This project covers foundational Object-Oriented Programming concepts in Python.
+This project covers fundamental Object-Oriented Programming concepts in Python.
 
-## Covered Topics
-- What is OOP
-- Classes and objects
-- Private attributes
-- Validation
-- Methods
-- Area computation
+## Files
+0-square.py → 6-square.py
 
-## Usage
+Each file contains:
+- Proper shebang
+- Module docstring
+- Class docstring
+- Method definitions only
 
-Make files executable:
-    chmod +x *.py
-
-Run individual tests:
-    python3 main_0.py
-    python3 main_1.py
-    python3 main_2.py
-    python3 main_3.py
+Implementation intentionally left empty.
 EOF
 
 chmod +x *.py
 
-echo "All files created successfully."
+echo "Skeleton files generated successfully."
