@@ -12,13 +12,3 @@ try:
     print("Area: {} for size: {}".format(my_square.area(), my_square.size))
 except Exception as e:
     print(e)
-
-try:
-    new = Square(5)
-    print("Area: {} for size: {}".format(new.area(), new.size))
-    new.__size = -100
-    print("Area: {} for size: {}".format(new.area(), new.size))
-except Exception as e:
-    print(e)
-
-print(new.__dict__)
