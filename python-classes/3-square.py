@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module that defines a Square with area method."""
 
+
 class Square:
     """Defines a square with area capability."""
 
@@ -13,5 +14,5 @@ class Square:
         self.__size = size
 
     def area(self):
-        """Return the area of the square."""
+        """Returns the area of the square"""
         return self.__size ** 2
