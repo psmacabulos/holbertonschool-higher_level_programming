@@ -20,6 +20,7 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
+    """SubClass Rectangle from Base Geometry"""
     def __init__(self, width, height):
         super().__init__()
 
