@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-# Test file for 9-rectangle.py
+Rectangle = __import__('9-rectangle').Rectangle
 
-if __name__ == "__main__":
-    print("Running test for 9-rectangle.py")
+r = Rectangle(3, 5)
+
+print(r)
+print(r.area())
