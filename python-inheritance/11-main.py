@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-# Test file for 11-square.py
+Square = __import__('11-square').Square
 
-if __name__ == "__main__":
-    print("Running test for 11-square.py")
+s = Square(13)
+
+print(s)
+print(s.area())
