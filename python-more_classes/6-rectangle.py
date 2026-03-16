@@ -7,10 +7,12 @@ Holberton - More Classes and Objects
 
 class Rectangle:
     """Defines a Rectangle Class"""
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     def __str__(self):
         """Return the string representation of the rectangle using '#'"""
@@ -29,6 +31,7 @@ class Rectangle:
 
     def __del__(self):
         """Delete the rectangle instance"""
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
 
     @property
