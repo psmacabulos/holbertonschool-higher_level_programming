@@ -1,5 +1,17 @@
 #!/usr/bin/python3
-# Test file for 8-rectangle.py
+Rectangle = __import__('8-rectangle').Rectangle
 
-if __name__ == "__main__":
-    print("Running test for 8-rectangle.py")
+r = Rectangle(3, 5)
+
+print(r)
+print(dir(r))
+
+try:
+    print("Rectangle: {} - {}".format(r.width, r.height))
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+
+try:
+    r2 = Rectangle(4, True)
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
