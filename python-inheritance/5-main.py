@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-# Test file for 5-base_geometry.py
+BaseGeometry = __import__('5-base_geometry').BaseGeometry
 
-if __name__ == "__main__":
-    print("Running test for 5-base_geometry.py")
+bg = BaseGeometry()
+
+print(bg)
+print(dir(bg))
+print(dir(BaseGeometry))
