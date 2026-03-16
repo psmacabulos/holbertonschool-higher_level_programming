@@ -1,0 +1,10 @@
+>>> is_kind_of_class = __import__('3-is_kind_of_class').is_kind_of_class
+>>> class A: pass
+>>> class B(A): pass
+>>> b = B()
+>>> is_kind_of_class(b, A)
+True
+>>> is_kind_of_class(b, B)
+True
+>>> is_kind_of_class(b, int)
+False

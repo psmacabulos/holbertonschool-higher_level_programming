@@ -1,0 +1,6 @@
+>>> MyInt = __import__('100-my_int').MyInt
+>>> a = MyInt(3)
+>>> a == 3
+False
+>>> a != 3
+True

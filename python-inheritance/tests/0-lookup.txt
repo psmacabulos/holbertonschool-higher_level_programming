@@ -1,0 +1,7 @@
+>>> lookup = __import__('0-lookup').lookup
+>>> class MyClass:
+...     def test(self):
+...         pass
+>>> obj = MyClass()
+>>> isinstance(lookup(obj), list)
+True

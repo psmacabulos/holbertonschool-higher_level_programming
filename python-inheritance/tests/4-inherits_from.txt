@@ -1,0 +1,8 @@
+>>> inherits_from = __import__('4-inherits_from').inherits_from
+>>> class A: pass
+>>> class B(A): pass
+>>> b = B()
+>>> inherits_from(b, A)
+True
+>>> inherits_from(b, B)
+False
