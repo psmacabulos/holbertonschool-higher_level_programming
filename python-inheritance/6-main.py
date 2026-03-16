@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-# Test file for 6-base_geometry.py
+BaseGeometry = __import__('6-base_geometry').BaseGeometry
 
-if __name__ == "__main__":
-    print("Running test for 6-base_geometry.py")
+bg = BaseGeometry()
+
+try:
+    print(bg.area())
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
