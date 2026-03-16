@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Task 0: Rectangle
+Task 1: Rectangle
 Holberton - More Classes and Objects
 """
 
