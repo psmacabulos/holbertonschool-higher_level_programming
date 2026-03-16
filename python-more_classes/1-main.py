@@ -1,9 +1,15 @@
 #!/usr/bin/python3
+
+"""
+Test file for task 1
+"""
+
 Rectangle = __import__('1-rectangle').Rectangle
 
-my_rectangle = Rectangle(2, 4)
-print(my_rectangle.__dict__)
+# Example scaffold tests
+if __name__ == "__main__":
+    r = Rectangle()
 
-my_rectangle.width = 10
-my_rectangle.height = 3
-print(my_rectangle.__dict__)
+    print("Rectangle created")
+    print("Area:", r.area())
+    print("Perimeter:", r.perimeter())
