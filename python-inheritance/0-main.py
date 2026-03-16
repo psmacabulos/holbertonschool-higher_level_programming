@@ -1,5 +1,14 @@
 #!/usr/bin/python3
-# Test file for 0-lookup.py
+lookup = __import__('0-lookup').lookup
 
-if __name__ == "__main__":
-    print("Running test for 0-lookup.py")
+class MyClass1(object):
+    pass
+
+class MyClass2(object):
+    my_attr1 = 3
+    def my_meth(self):
+        pass
+
+print(lookup(MyClass1))
+print(lookup(MyClass2))
+print(lookup(int))
