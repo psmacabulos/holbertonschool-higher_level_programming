@@ -22,7 +22,7 @@ class Circle(Shape):
 
     def __init__(self, radius):
         if not isinstance(radius, int):
-            raise TypeError("radius must be an integer")
+            raise TypeError("radius should be int")
         if radius < 0:
             raise ValueError("radius must be >= 0")
         self.__radius = radius
@@ -40,13 +40,9 @@ class Rectangle(Shape):
     def __init__(self, width, height):
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
-        if width < 0:
-            raise ValueError("width must be >= 0")
 
         if not isinstance(height, int):
             raise TypeError("height must be an integer")
-        if height < 0:
-            raise ValueError("height must be >= 0")
 
         self.__width = width
         self.__height = height
@@ -58,7 +54,7 @@ class Rectangle(Shape):
         return 2 * (self.__width + self.__height)
 
 
-def shape_info(obj):
-    """Duck typing function"""
-    print(f"Area: {obj.area()}")
-    print(f"Perimeter: {obj.perimeter()}")
+def shape_info(arg):
+    """Duck typing method"""
+    print(f"Area: {arg.area()}")
+    print(f"Perimeter: {arg.perimeter()}")
