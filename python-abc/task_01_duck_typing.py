@@ -21,6 +21,10 @@ class Circle(Shape):
     """SubClass Circle"""
 
     def __init__(self, radius):
+        if not isinstance(radius, int):
+            raise TypeError("radius should be int")
+        if radius < 0:
+            raise ValueError("radius must be >= 0")
         self.__radius = radius
 
     def area(self):
@@ -34,6 +38,12 @@ class Rectangle(Shape):
     """SubClass Rectangle"""
 
     def __init__(self, width, height):
+        if not isinstance(width, int):
+            raise TypeError("width must be an integer")
+
+        if not isinstance(height, int):
+            raise TypeError("height must be an integer")
+
         self.__width = width
         self.__height = height
 
