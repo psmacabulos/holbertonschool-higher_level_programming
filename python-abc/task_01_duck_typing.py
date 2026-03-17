@@ -58,3 +58,10 @@ def shape_info(arg):
     """Duck typing method"""
     print(f"Area: {arg.area()}")
     print(f"Perimeter: {arg.perimeter()}")
+
+# Test
+ball = Circle(4)
+court = Rectangle(10, 15)
+
+shape_info(ball)
+shape_info(court)
