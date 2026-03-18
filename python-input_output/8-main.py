@@ -1,10 +1,14 @@
 #!/usr/bin/python3
-class_to_json = __import__('8-class_to_json').class_to_json
+""" My class module
+"""
 
-class Test:
-    def __init__(self):
-        self.name = "John"
-        self.age = 30
+class MyClass:
+    """ My class
+    """
 
-t = Test()
-print(class_to_json(t))
+    def __init__(self, name):
+        self.name = name
+        self.number = 0
+
+    def __str__(self):
+        return "[MyClass] {} - {:d}".format(self.name, self.number)
