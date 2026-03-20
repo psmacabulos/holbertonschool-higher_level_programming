@@ -1,10 +1,21 @@
 #!/usr/bin/env python3
-"""Module docstring"""
+"""Module CSV to JSON"""
 
-def main():
-    """Main function"""
-    pass
+import csv
+import json
 
 
-if __name__ == "__main__":
-    main()
+def convert_csv_to_json(filename):
+    """Convert CSV file to JSON file"""
+    try:
+        with open(filename, "r") as csv_file:
+            reader = csv.DictReader(csv_file)
+            data = list(reader)
+
+        with open("data.json", "w") as json_file:
+            json.dump(data, json_file)
+
+        return True
+
+    except Exception:
+        return False
