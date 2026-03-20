@@ -23,8 +23,7 @@ class Circle(Shape):
     def __init__(self, radius):
         if not isinstance(radius, int):
             raise TypeError("radius should be integer")
-        if radius < 0:
-            raise ValueError("radius must be >= 0")
+
         self.__radius = radius
 
     def area(self):
