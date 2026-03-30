@@ -1,0 +1,7 @@
+-- CREATE A USER
+
+-- Create a user if it nodes not already exist
+CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
+
+-- Grant all priveleges on the server
+GRANTS ALL PRIVELEGES ON *.* TO 'user_0d_1'@'locahost';
