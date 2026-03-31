@@ -24,7 +24,7 @@ if __name__ == "__main__":
     session = Session()
 
     # 4. Query all states named 'Louisiana'
-    states = session.query(State).filter(State.name == "Louisiana").all()
+    states = session.query(State).filter(State.name.like('%a%')).all()
 
     # 5. Delete each state
     for state in states:
