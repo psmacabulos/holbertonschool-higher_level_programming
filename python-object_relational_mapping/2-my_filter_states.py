@@ -10,7 +10,8 @@ if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
-    state_name = sys.argv[4].strip("'\"")
+    state_name = sys.argv[4]
+
 
     # Create the connection
     conn = MySQLdb.connect(
@@ -25,8 +26,7 @@ if __name__ == "__main__":
     cur = conn.cursor()
 
     # Create a query then execute
-    query = "SELECT * FROM states WHERE name = '{}' "
-    "ORDER BY id ASC".format(state_name)
+    query = "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(state_name)
     cur.execute(query)
 
     # Retrieve the results
