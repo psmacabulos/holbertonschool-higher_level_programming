@@ -5,5 +5,5 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Your code here
-});
+  document.querySelector('header').style.color = '#FF0000'
+})
