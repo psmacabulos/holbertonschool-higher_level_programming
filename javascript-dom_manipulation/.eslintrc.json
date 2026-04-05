@@ -1,0 +1,7 @@
+{
+  "extends": "semistandard",
+  "rules": {
+    "no-var": "error",
+    "prefer-const": "error"
+  }
+}

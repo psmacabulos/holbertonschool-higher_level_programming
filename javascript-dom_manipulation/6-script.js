@@ -1,7 +1,7 @@
 #!/usr/bin/node
 /*
  * File: 6-script.js
- * Description: DOM Manipulation task 6
+ * Description: Star wars character
  */
 
 document.addEventListener('DOMContentLoaded', () => {
