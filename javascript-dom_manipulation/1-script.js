@@ -1,7 +1,7 @@
 #!/usr/bin/node
 /*
  * File: 1-script.js
- * Description: DOM Manipulation task 1
+ * Description: Click and turn red
  */
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -1,7 +1,7 @@
 #!/usr/bin/node
 /*
  * File: 0-script.js
- * Description: DOM Manipulation task 0
+ * Description: Color Me
  */
 
 document.addEventListener('DOMContentLoaded', () => {
