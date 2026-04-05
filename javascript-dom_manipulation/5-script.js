@@ -1,9 +1,14 @@
 #!/usr/bin/node
 /*
  * File: 5-script.js
- * Description: DOM Manipulation task 5
+ * Description: Change the text
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Your code here
+  const header = document.querySelector('header');
+  const update = document.querySelector('#update_header');
+
+  update.addEventListener('click', () => {
+    header.textContent = 'New Header!!!';
+  });
 });
