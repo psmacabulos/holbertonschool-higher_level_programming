@@ -1,9 +1,13 @@
 #!/usr/bin/node
 /*
  * File: 2-script.js
- * Description: DOM Manipulation task 2
+ * Description: Add `.red` class
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Your code here
+  document.querySelector('#red_header').addEventListener('click', () => {
+    // add a class 'red' to the header element
+    const header = document.querySelector('header');
+    header.classList.add('red');
+  });
 });
