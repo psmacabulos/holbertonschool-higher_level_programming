@@ -17,11 +17,13 @@ def contact():
 
 @app.route('/items')
 def items():
-    with open('items.json') as f:
-        data = json.load(f)
-    print(data)
-    items = data['items']
-
+    try:
+        with open('items.json') as f:
+            data = json.load(f)
+    except json.JSONDecodeError:
+        data = {}
+        
+    items = data.get('items', [])
     return render_template('items.html',items=items)
 
 if __name__ == '__main__':
