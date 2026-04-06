@@ -29,7 +29,7 @@ def read_sql():
     try:
         conn = sqlite3.connect("products.db")
         cur = conn.cursor()
-        cur.execute(""" SELECT * FROM Produc """)
+        cur.execute(""" SELECT * FROM Products """)
         rows = cur.fetchall()
         print(f"printing rows after fetching {rows}")
         data = []
