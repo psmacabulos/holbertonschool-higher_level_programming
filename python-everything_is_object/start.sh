@@ -23,7 +23,7 @@ echo "Creating task files..."
 
 for i in {0..29}
 do
-    touch "${i}.txt"
+    touch "${i}-answer.txt"
 done
 
 # -------------------------------
